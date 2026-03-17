@@ -1,12 +1,18 @@
-![Typing](https://readme-typing-svg.herokuapp.com?color=00F7FF&lines=XR+Developer;SaaS+Builder;AI+Automation+Engineer)
+![Typing](https://readme-typing-svg.herokuapp.com?color=00F7FF&lines=XR+Developer;SaaS+Builder;AI+Automation+Engineer+wannabe)
 
-## [stats icon] GitHub Stats
+---
+
+## 📊 GitHub Stats
 ![Stats](https://github-readme-stats.vercel.app/api?username=itsLucas02&show_icons=true&theme=tokyonight)
 
-## [mailbox icon] Contact
+---
+
+## 📫 Contact
 - Email: aizzulluqman454@gmail.com
 
-## Hi there 👋
+---
+
+## Hi there, me llamo Aizzul Luqman 👋
 
 <!--
 **itsLucas02/itsLucas02** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
