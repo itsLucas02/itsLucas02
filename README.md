@@ -1,3 +1,11 @@
+![Typing](https://readme-typing-svg.herokuapp.com?color=00F7FF&lines=XR+Developer;SaaS+Builder;AI+Automation+Engineer)
+
+## [stats icon] GitHub Stats
+![Stats](https://github-readme-stats.vercel.app/api?username=itsLucas02&show_icons=true&theme=tokyonight)
+
+## [mailbox icon] Contact
+- Email: aizzulluqman454@gmail.com
+
 ## Hi there 👋
 
 <!--
