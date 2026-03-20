@@ -1,3 +1,22 @@
+<p align="center">
+  <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdTBkN2JjMDR4bHQ4Zzdtc2J0bzNycDFtZHVsYmx0NXRmcnplNGtuYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ep7ReKsdHfOhqzSLRz/giphy.gif" style="width: 60%; max-width: 500px;" />
+</p>
+
+<h1 align="center">🌙 Selamat Hari Raya & Happy Eid Mubarak! 🕌</h1>
+
+<p align="center">
+  <img 
+    src="https://readme-typing-svg.herokuapp.com?color=00F7FF&center=true&vCenter=true&width=700&lines=Maaf+Zahir+dan+Batin+💚;Semoga+Raya+dipenuhi+kebahagiaan✨;Stay+productive+after+Raya+😄" 
+    alt="Typing SVG" 
+  />
+</p>
+
+---
+
+<p align="center">✨ 🌙 🕌 🌙 ✨</p>
+
+---
+
 # Hi, I'm Aizzul Luqman 👋
 
 💻 XR Developer | 🚀 SaaS Builder | 🤖 AI Automation Explorer
