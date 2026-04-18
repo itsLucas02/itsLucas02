@@ -77,6 +77,6 @@
 
 ---
 
-## Links
-- aizzul.com
-- medibrave.com
+## 🌐 Links
+- Portfolio: [aizzul.com](https://aizzul.com)
+- Startup: [medibrave.com](https://medibrave.com)
