@@ -1,0 +1,35 @@
+name: Rotate README Streak Theme
+
+on:
+  schedule:
+    # Runs daily at 12:00 AM Malaysia time.
+    - cron: "0 0 * * *"
+      timezone: "Asia/Kuala_Lumpur"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  rotate-streak-theme:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Rotate streak stats theme
+        run: node scripts/update-streak-theme.mjs
+
+      - name: Commit README update
+        run: |
+          if git diff --quiet README.md; then
+            echo "README.md already has today's theme."
+            exit 0
+          fi
+
+          git config user.name "itsLucas02"
+          git config user.email "aizzulluqman454@gmail.com"
+          git add README.md
+          git commit -m "chore: rotate README streak theme"
+          git push
