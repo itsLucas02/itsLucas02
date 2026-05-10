@@ -3,13 +3,35 @@ import { readFile, writeFile } from "node:fs/promises";
 const readmePath = new URL("../README.md", import.meta.url);
 const themesUrl =
   "https://raw.githubusercontent.com/DenverCoder1/github-readme-streak-stats/main/docs/themes.md";
+const malaysiaTimeZone = "Asia/Kuala_Lumpur";
 
 function parseThemes(markdown) {
   return [...markdown.matchAll(/^\|\s*`([^`]+)`\s*\|/gm)].map((match) => match[1]);
 }
 
 function chooseTheme(themes) {
-  const daysSinceEpoch = Math.floor(Date.now() / 86_400_000);
+  const malaysiaDateParts = new Intl.DateTimeFormat("en-CA", {
+    timeZone: malaysiaTimeZone,
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  })
+    .formatToParts(new Date())
+    .reduce((parts, part) => {
+      if (part.type !== "literal") {
+        parts[part.type] = part.value;
+      }
+
+      return parts;
+    }, {});
+
+  const malaysiaDayStartUtc = Date.UTC(
+    Number(malaysiaDateParts.year),
+    Number(malaysiaDateParts.month) - 1,
+    Number(malaysiaDateParts.day),
+  );
+  const daysSinceEpoch = Math.floor(malaysiaDayStartUtc / 86_400_000);
+
   return themes[daysSinceEpoch % themes.length];
 }
 
