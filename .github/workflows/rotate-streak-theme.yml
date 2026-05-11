@@ -2,8 +2,8 @@ name: Rotate README Streak Theme
 
 on:
   schedule:
-    # Runs daily at 1:02 AM Malaysia time.
-    - cron: "2 1 * * *"
+    # Runs daily at 1:10 AM Malaysia time.
+    - cron: "10 1 * * *"
       timezone: "Asia/Kuala_Lumpur"
   workflow_dispatch:
 
