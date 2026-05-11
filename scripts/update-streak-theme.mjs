@@ -5,12 +5,8 @@ const themesUrl =
   "https://raw.githubusercontent.com/DenverCoder1/github-readme-streak-stats/main/docs/themes.md";
 const malaysiaTimeZone = "Asia/Kuala_Lumpur";
 
-function parseThemes(markdown) {
-  return [...markdown.matchAll(/^\|\s*`([^`]+)`\s*\|/gm)].map((match) => match[1]);
-}
-
-function chooseTheme(themes) {
-  const malaysiaDateParts = new Intl.DateTimeFormat("en-CA", {
+function getMalaysiaDateParts() {
+  return new Intl.DateTimeFormat("en-CA", {
     timeZone: malaysiaTimeZone,
     year: "numeric",
     month: "2-digit",
@@ -24,7 +20,14 @@ function chooseTheme(themes) {
 
       return parts;
     }, {});
+}
 
+function parseThemes(markdown) {
+  return [...markdown.matchAll(/^\|\s*`([^`]+)`\s*\|/gm)].map((match) => match[1]);
+}
+
+function chooseTheme(themes) {
+  const malaysiaDateParts = getMalaysiaDateParts();
   const malaysiaDayStartUtc = Date.UTC(
     Number(malaysiaDateParts.year),
     Number(malaysiaDateParts.month) - 1,
@@ -77,7 +80,10 @@ if (themes.length === 0) {
 const readme = await readFile(readmePath, "utf8");
 const nextTheme = chooseTheme(themes);
 const updatedReadme = updateStreakTheme(readme, nextTheme);
+const malaysiaDateParts = getMalaysiaDateParts();
 
 await writeFile(readmePath, updatedReadme, "utf8");
 
-console.log(`Streak stats theme set to: ${nextTheme}`);
+console.log(
+  `Malaysia date ${malaysiaDateParts.year}-${malaysiaDateParts.month}-${malaysiaDateParts.day}: streak stats theme set to ${nextTheme}`,
+);
