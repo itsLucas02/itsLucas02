@@ -2,11 +2,8 @@ name: Rotate README Streak Theme
 
 on:
   schedule:
-    # Retry during the first hour after midnight Malaysia time.
-    # GitHub can delay or drop scheduled jobs at the start of an hour.
-    - cron: "5,10,15,20,25,30,35,40,45,50,55 0 * * *"
-      timezone: "Asia/Kuala_Lumpur"
-    - cron: "5,10,15,20,25,30,35,40,45,50,55 1 * * *"
+    # Runs daily at 1:02 AM Malaysia time.
+    - cron: "2 1 * * *"
       timezone: "Asia/Kuala_Lumpur"
   workflow_dispatch:
 
