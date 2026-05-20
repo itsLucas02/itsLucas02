@@ -44,7 +44,7 @@
 ---
 
 ## 🔥 GitHub Streak
-[![GitHub Streak](https://streak-stats.demolab.com/?user=itsLucas02&theme=tokyonight-duo)](https://git.io/streak-stats)
+[![GitHub Streak](https://streak-stats.demolab.com/?user=itsLucas02&theme=onedark)](https://git.io/streak-stats)
 
 ---
 
