@@ -73,7 +73,7 @@
 
 ## 📫 Contact
 - Email: aizzulluqman454@gmail.com
-- Phone: 012-35
+- Phone: -
 
 ---
 
