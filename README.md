@@ -73,10 +73,10 @@
 
 ## 📫 Contact
 - Email: aizzulluqman454@gmail.com
-- Phone: -
+- Phone: ...
 
 ---
 
 ## 🌐 Links
 - Portfolio: [aizzul.com](https://aizzul.com)
-- Startup: [medibrave.com](https://medibrave.com)
+- cooking...
