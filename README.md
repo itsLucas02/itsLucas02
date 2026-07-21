@@ -44,7 +44,7 @@
 ---
 
 ## 🔥 GitHub Streak
-[![GitHub Streak](https://streak-stats.demolab.com/?user=itsLucas02&theme=elegant)](https://git.io/streak-stats)
+[![GitHub Streak](https://streak-stats.demolab.com/?user=itsLucas02&theme=leafy)](https://git.io/streak-stats)
 
 ---
 
