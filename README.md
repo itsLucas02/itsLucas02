@@ -79,12 +79,12 @@ aizzul@github:~$ whoami
     </td>
     <td width="50%">
       <!-- NOTE: streak theme is rotated daily by .github/workflows/rotate-streak-theme.yml — do not remove -->
-      <img src="https://streak-stats.demolab.com/?user=itsLucas02&theme=catppuccin-macchiato&hide_border=true&locale=en%22 alt="GitHub Streak" width="100%" />
+      <img src="https://streak-stats.demolab.com/?user=itsLucas02&theme=catppuccin-macchiato&hide_border=true&locale=en" alt="GitHub Streak" width="100%" />
     </td>
   </tr>
 </table>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=itsLucas02&theme=minato&hide_border=true&bg_color=0d1117" alt="Contribution Activity Graph" width="100%" />
+<img src="assets/github-contribution-grid-snake.svg" alt="Contribution activity — snake eating contributions grid" width="100%" />
 
 <!--
   Third-party stat cards pulled after upstream outages (stats: HTTP 503, trophies: HTTP 402).
@@ -140,7 +140,5 @@ aizzul@github:~$ ./open_channel --protocol handshake
 <br /><br />
 
 <sub>⟨/⟩ END OF TRANSMISSION — rebuilt from scratch with hand-crafted SVG, zero copied layouts</sub>
-
-## note
 
 </div>

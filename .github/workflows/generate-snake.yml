@@ -1,0 +1,36 @@
+name: Generate contribution snake
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Generate snake SVG
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: itsLucas02
+          outputs: |
+            assets/github-contribution-grid-snake.svg?palette=github-dark
+
+      - name: Commit updated snake
+        run: |
+          if git diff --quiet assets/github-contribution-grid-snake.svg; then
+            echo "Snake unchanged since last run."
+            exit 0
+          fi
+          git config user.name "itsLucas02"
+          git config user.email "aizzulluqman454@gmail.com"
+          git add assets/github-contribution-grid-snake.svg
+          git commit -m "chore: refresh contribution snake"
+          git push
