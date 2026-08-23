@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="92" viewBox="0 0 900 92" role="img" aria-label="Section 02 — TECH ARSENAL">
+  <defs>
+    <linearGradient id="rule" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FF3DF5" stop-opacity=".9"/>
+      <stop offset="1" stop-color="#FF3DF5" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="chip" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FF3DF5" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#FF3DF5" stop-opacity=".05"/>
+    </linearGradient>
+  </defs>
+
+  <!-- panel -->
+  <rect x="8" y="10" width="884" height="72" rx="12" fill="#0A0F1E" stroke="#1E2A45"/>
+  <!-- corner brackets -->
+  <path d="M 22 22 h 26 M 22 22 v 16" stroke="#FF3DF5" stroke-width="2.5" fill="none" opacity=".95"/>
+  <path d="M 852 58 h 26 M 878 58 v 16" stroke="#FF3DF5" stroke-width="2.5" fill="none" opacity=".95"/>
+
+  <!-- number chip -->
+  <rect x="46" y="30" width="64" height="32" rx="6" fill="url(#chip)" stroke="#FF3DF5" stroke-opacity=".8"/>
+  <text x="78" y="52" font-family="'Courier New',monospace" font-size="19" font-weight="bold"
+        fill="#FF3DF5" text-anchor="middle" letter-spacing="2">02</text>
+
+  <!-- label -->
+  <text x="132" y="53" font-family="'Courier New',monospace" font-size="23" font-weight="bold"
+        fill="#E8F4FF" letter-spacing="7">TECH ARSENAL</text>
+
+  <!-- rule + markers -->
+  <rect x="132" y="66" height="2" width="710" fill="url(#rule)"/>
+  <path d="M 856 46 l 10 6 l -10 6 z" fill="#FF3DF5"/>
+  <circle cx="842" cy="52" r="2.5" fill="#FF3DF5" opacity=".8"/>
+</svg>

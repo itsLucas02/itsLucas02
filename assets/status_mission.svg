@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="64" viewBox="0 0 760 64" role="img" aria-label="Mission status — MediBrave CMS shipping in public">
+  <defs>
+    <linearGradient id="blockGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#00F7FF"/>
+      <stop offset="1" stop-color="#FF3DF5"/>
+    </linearGradient>
+  </defs>
+  <rect x="4" y="4" width="752" height="56" rx="12" fill="#0A0F1E" stroke="#223052"/>
+  <text x="28" y="38" font-family="'Courier New',monospace" font-size="15" font-weight="bold" letter-spacing="2" fill="#C9D6FF">MISSION//MEDIBRAVE</text>
+
+  <!-- loading blocks: 8 slots, sequential pulse -->
+  <g>
+    <rect x="252" y="24" width="42" height="16" rx="3" fill="url(#blockGrad)"/>
+    <rect x="304" y="24" width="42" height="16" rx="3" fill="url(#blockGrad)"/>
+    <rect x="356" y="24" width="42" height="16" rx="3" fill="url(#blockGrad)"/>
+    <rect x="408" y="24" width="42" height="16" rx="3" fill="url(#blockGrad)">
+      <animate attributeName="opacity" values="1;.15;1" dur="1.6s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="460" y="24" width="42" height="16" rx="3" fill="#1B2743">
+      <animate attributeName="opacity" values=".25;1;.25" dur="1.6s" begin="0.8s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="512" y="24" width="42" height="16" rx="3" fill="#1B2743"/>
+    <rect x="564" y="24" width="42" height="16" rx="3" fill="#1B2743"/>
+    <rect x="616" y="24" width="42" height="16" rx="3" fill="#1B2743"/>
+  </g>
+
+  <text x="700" y="38" font-family="'Courier New',monospace" font-size="13" letter-spacing="2" fill="#57F287">LIVE</text>
+  <text x="380" y="54" text-anchor="middle" font-family="'Courier New',monospace" font-size="11" letter-spacing="4" fill="#8FA3C8">SHIPPING V2 IN PUBLIC — CLINIC-GRADE SAAS</text>
+</svg>
