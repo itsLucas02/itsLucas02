@@ -74,7 +74,8 @@ aizzul@github:~$ whoami
 <table>
   <tr>
     <td width="50%">
-      <img src="https://github-readme-stats.vercel.app/api?username=itsLucas02&show_icons=true&theme=synthwave&hide_border=true&include_all_commits=true&count_private=true&bg_color=0d1117" alt="GitHub Stats" width="100%" />
+      <!-- Live tile regenerated daily by .github/workflows/update-telemetry.yml — self-owned, immune to third-party outages -->
+      <img src="assets/telemetry.svg" alt="Telemetry — followers, repos, stars earned, years on GitHub" width="100%" />
     </td>
     <td width="50%">
       <!-- NOTE: streak theme is rotated daily by .github/workflows/rotate-streak-theme.yml — do not remove -->
@@ -85,7 +86,16 @@ aizzul@github:~$ whoami
 
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=itsLucas02&theme=minato&hide_border=true&bg_color=0d1117" alt="Contribution Activity Graph" width="100%" />
 
+<!--
+  Third-party stat cards pulled after upstream outages (stats: HTTP 503, trophies: HTTP 402).
+  The public instances are rate-limited beyond our control — restore below if they ever recover,
+  or self-host github-readme-stats on your own Vercel account for guaranteed uptime:
+
+<img src="https://github-readme-stats.vercel.app/api?username=itsLucas02&show_icons=true&theme=synthwave&hide_border=true&include_all_commits=true&count_private=true" alt="GitHub Stats" width="495" />
+
 <img src="https://github-profile-trophy.vercel.app/?username=itsLucas02&theme=radical&no-frame=true&no-bg=true" alt="GitHub Trophies" width="100%" />
+-->
+
 
 </div>
 

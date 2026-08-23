@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="495" height="195" viewBox="0 0 495 195" role="img" aria-label="Live telemetry for itsLucas02: followers, repositories, stars, account age">
+  <rect x="4" y="4" width="487" height="187" rx="14" fill="#0A0F1E" stroke="#223052"/>
+  <text x="22" y="30" font-family="'Courier New',monospace" font-size="13" font-weight="bold"
+        letter-spacing="3" fill="#C9D6FF">TELEMETRY//ITSLUCAS02</text>
+  <circle cx="471" cy="25" r="4" fill="#57F287">
+    <animate attributeName="opacity" values="1;.2;1" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <!-- FOLLOWERS -->
+  <rect x="18" y="44" width="222" height="60" rx="10" fill="#0E1526" stroke="#223052"/>
+  <rect x="18" y="44" width="4" height="60" rx="2" fill="#00F7FF"/>
+  <text x="34" y="69" font-family="'Courier New',monospace" font-size="11"
+        letter-spacing="2" fill="#8FA3C8">FOLLOWERS</text>
+  <text x="224" y="92" text-anchor="end" font-family="'Courier New',monospace"
+        font-size="26" font-weight="bold" fill="#00F7FF">2</text>
+  <!-- PUBLIC REPOS -->
+  <rect x="250" y="44" width="222" height="60" rx="10" fill="#0E1526" stroke="#223052"/>
+  <rect x="250" y="44" width="4" height="60" rx="2" fill="#FF3DF5"/>
+  <text x="266" y="69" font-family="'Courier New',monospace" font-size="11"
+        letter-spacing="2" fill="#8FA3C8">PUBLIC REPOS</text>
+  <text x="456" y="92" text-anchor="end" font-family="'Courier New',monospace"
+        font-size="26" font-weight="bold" fill="#FF3DF5">12</text>
+  <!-- STARS EARNED -->
+  <rect x="18" y="116" width="222" height="60" rx="10" fill="#0E1526" stroke="#223052"/>
+  <rect x="18" y="116" width="4" height="60" rx="2" fill="#9D5CFF"/>
+  <text x="34" y="141" font-family="'Courier New',monospace" font-size="11"
+        letter-spacing="2" fill="#8FA3C8">STARS EARNED</text>
+  <text x="224" y="164" text-anchor="end" font-family="'Courier New',monospace"
+        font-size="26" font-weight="bold" fill="#9D5CFF">0</text>
+  <!-- YRS ON GITHUB -->
+  <rect x="250" y="116" width="222" height="60" rx="10" fill="#0E1526" stroke="#223052"/>
+  <rect x="250" y="116" width="4" height="60" rx="2" fill="#57F287"/>
+  <text x="266" y="141" font-family="'Courier New',monospace" font-size="11"
+        letter-spacing="2" fill="#8FA3C8">YRS ON GITHUB</text>
+  <text x="456" y="164" text-anchor="end" font-family="'Courier New',monospace"
+        font-size="26" font-weight="bold" fill="#57F287">4+</text>
+</svg>

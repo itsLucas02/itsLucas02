@@ -1,0 +1,34 @@
+name: Update Telemetry Tile
+
+on:
+  schedule:
+    # 00:23 Malaysia time (16:23 UTC) — off-peak minute on purpose.
+    - cron: "23 16 * * *"
+      timezone: "Asia/Kuala_Lumpur"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-telemetry:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Regenerate telemetry tile from public GitHub API
+        run: node scripts/gen-telemetry.mjs
+
+      - name: Commit updated tile
+        run: |
+          if git diff --quiet assets/telemetry.svg; then
+            echo "Telemetry unchanged since last run."
+            exit 0
+          fi
+          git config user.name "itsLucas02"
+          git config user.email "aizzulluqman454@gmail.com"
+          git add assets/telemetry.svg
+          git commit -m "chore: refresh telemetry tile"
+          git push
