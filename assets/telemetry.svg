@@ -11,7 +11,7 @@
   <text x="34" y="69" font-family="'Courier New',monospace" font-size="11"
         letter-spacing="2" fill="#8FA3C8">FOLLOWERS</text>
   <text x="224" y="92" text-anchor="end" font-family="'Courier New',monospace"
-        font-size="26" font-weight="bold" fill="#00F7FF">2</text>
+        font-size="26" font-weight="bold" fill="#00F7FF">3</text>
   <!-- PUBLIC REPOS -->
   <rect x="250" y="44" width="222" height="60" rx="10" fill="#0E1526" stroke="#223052"/>
   <rect x="250" y="44" width="4" height="60" rx="2" fill="#FF3DF5"/>
