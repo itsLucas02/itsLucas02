@@ -141,4 +141,6 @@ aizzul@github:~$ ./open_channel --protocol handshake
 
 <sub>⟨/⟩ END OF TRANSMISSION — rebuilt from scratch with hand-crafted SVG, zero copied layouts</sub>
 
+## note
+
 </div>
