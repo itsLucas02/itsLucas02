@@ -79,7 +79,7 @@ aizzul@github:~$ whoami
     </td>
     <td width="50%">
       <!-- NOTE: streak theme is rotated daily by .github/workflows/rotate-streak-theme.yml — do not remove -->
-      <img src="https://streak-stats.demolab.com/?user=itsLucas02&theme=rose&hide_border=true&locale=en%22 alt="GitHub Streak" width="100%" />
+      <img src="https://streak-stats.demolab.com/?user=itsLucas02&theme=neon&hide_border=true&locale=en%22 alt="GitHub Streak" width="100%" />
     </td>
   </tr>
 </table>
