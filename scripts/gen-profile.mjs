@@ -91,10 +91,10 @@ function panel(theme, { id, title }, i) {
 // Placeholder covers sourced from Pexels (free to use). Swap the files in
 // assets/covers/ for real screenshots and re-run — the SVG embeds them.
 const PROJECTS = [
-  { x: 0, y: 0, w: 420, h: 540, cat: "PRODUCT", title: "MediBrave", caption: "Clinic operations platform, pre-launch", cover: "medibrave.jpg", tint: "#1f7a4d" },
-  { x: 440, y: 0, w: 670, h: 260, cat: "XR", title: "Virtual Odyssey", caption: "Malaysia's heritage in virtual reality", cover: "virtual-odyssey.jpg", tint: "#6a3bd0" },
-  { x: 440, y: 280, w: 380, h: 260, cat: "PRODUCT", title: "Clinizaro", caption: "Clinic CRM for Klinik Seri Ayu", cover: "clinizaro.jpg", tint: "#2f8fd8" },
-  { x: 840, y: 280, w: 270, h: 260, cat: "SITE", title: "Timberhall Studio", caption: "A fictional studio in one HTML file", cover: "timberhall.jpg", tint: "#c2741a" },
+  { x: 0, y: 0, w: 420, h: 540, cat: "PRODUCT", title: "MediBrave", caption: "Clinic operations platform, pre-launch", cover: "medibrave.jpg" },
+  { x: 440, y: 0, w: 670, h: 260, cat: "XR", title: "Virtual Odyssey", caption: "Malaysia's heritage in virtual reality", cover: "virtual-odyssey.jpg" },
+  { x: 440, y: 280, w: 380, h: 260, cat: "PRODUCT", title: "Clinizaro", caption: "Clinic CRM for Klinik Seri Ayu", cover: "clinizaro.jpg" },
+  { x: 840, y: 280, w: 270, h: 260, cat: "SITE", title: "Timberhall Studio", caption: "A fictional studio in one HTML file", cover: "timberhall.jpg" },
 ];
 
 async function bento() {
@@ -106,7 +106,7 @@ async function bento() {
     const capSize = Math.min(12, (p.w - 52) / (Math.max(p.caption.length, 1) * 0.6)).toFixed(1);
     const image = "data:image/jpeg;base64," + (await readFile(join(COVERS, p.cover))).toString("base64");
     tiles.push(
-      `<svg x="${p.x}" y="${p.y}" width="${p.w}" height="${p.h}" viewBox="0 0 ${p.w} ${p.h}"><title>${esc(p.title)} — ${esc(p.caption)}</title><defs><clipPath id="clip-${idx}"><rect width="${p.w}" height="${p.h}" rx="24"/></clipPath><linearGradient id="shade-${idx}" x1="0%" y1="0%" x2="0%" y2="100%"><stop stop-color="#000" stop-opacity=".34"/><stop offset=".45" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".82"/></linearGradient></defs><g clip-path="url(#clip-${idx})"><image href="${image}" width="${p.w}" height="${p.h}" preserveAspectRatio="xMidYMid slice"/><rect width="${p.w}" height="${p.h}" fill="${p.tint}" style="mix-blend-mode:color" opacity="0.72"/><rect width="${p.w}" height="${p.h}" fill="url(#shade-${idx})"/></g><rect x="0.5" y="0.5" width="${p.w - 1}" height="${p.h - 1}" rx="23.5" fill="none" stroke="#ffffff" stroke-opacity=".12"/><path d="M${p.w - 48} 40l15-15m-15 0h15v15" stroke="#fff" stroke-width="2" fill="none"/><g font-family="${FONT}"><text x="26" y="36" font-size="11" letter-spacing="2"><tspan fill="${ACCENT}">${idx}</tspan><tspan fill="#e5e5e5"> / ${esc(p.cat)}</tspan></text><text x="26" y="${p.h - 62}" font-size="${size}" font-weight="600" letter-spacing="-1" fill="#fff">${esc(p.title)}</text><text x="26" y="${p.h - 30}" font-size="${capSize}" fill="#d4d4d4">${esc(p.caption)}</text></g></svg>`,
+      `<svg x="${p.x}" y="${p.y}" width="${p.w}" height="${p.h}" viewBox="0 0 ${p.w} ${p.h}"><title>${esc(p.title)} — ${esc(p.caption)}</title><defs><clipPath id="clip-${idx}"><rect width="${p.w}" height="${p.h}" rx="24"/></clipPath><linearGradient id="shade-${idx}" x1="0%" y1="0%" x2="0%" y2="100%"><stop stop-color="#000" stop-opacity=".15"/><stop offset=".45" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".8"/></linearGradient></defs><g clip-path="url(#clip-${idx})"><image href="${image}" width="${p.w}" height="${p.h}" preserveAspectRatio="xMidYMid slice"/><rect width="${p.w}" height="${p.h}" fill="url(#shade-${idx})"/></g><rect x="0.5" y="0.5" width="${p.w - 1}" height="${p.h - 1}" rx="23.5" fill="none" stroke="#ffffff" stroke-opacity=".12"/><path d="M${p.w - 48} 40l15-15m-15 0h15v15" stroke="#fff" stroke-width="2" fill="none"/><g font-family="${FONT}"><text x="26" y="36" font-size="11" letter-spacing="2"><tspan fill="${ACCENT}">${idx}</tspan><tspan fill="#e5e5e5"> / ${esc(p.cat)}</tspan></text><text x="26" y="${p.h - 62}" font-size="${size}" font-weight="600" letter-spacing="-1" fill="#fff">${esc(p.title)}</text><text x="26" y="${p.h - 30}" font-size="${capSize}" fill="#d4d4d4">${esc(p.caption)}</text></g></svg>`,
     );
   }
   return `<svg xmlns="http://www.w3.org/2000/svg" width="1110" height="540" viewBox="0 0 1110 540"><title>Selected projects</title>${tiles.join("")}</svg>\n`;
