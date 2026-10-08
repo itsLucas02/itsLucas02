@@ -52,17 +52,18 @@ const GMAIL = `<g transform="translate(12 16) scale(.2)"><path fill="#4285F4" d=
 
 function icon(id, theme) {
   const c = THEMES[theme];
+  const box = `<rect x="1" y="1" width="50" height="50" rx="14" fill="${c.surface}" stroke="${c.hair}"/>`;
   switch (id) {
     case "website":
-      return `<g fill="none" stroke="${c.ink}" stroke-width="1.7" stroke-linecap="round"><circle cx="26" cy="26" r="12"/><ellipse cx="26" cy="26" rx="5.5" ry="12"/><path d="M14 26H38M16 20H36M16 32H36"/></g>`;
+      return `${box}<g fill="none" stroke="${c.ink}" stroke-width="1.7" stroke-linecap="round"><circle cx="26" cy="26" r="12"/><ellipse cx="26" cy="26" rx="5.5" ry="12"/><path d="M14 26H38M16 20H36M16 32H36"/></g>`;
     case "linkedin":
-      return `<g transform="translate(13 13) scale(1.625)" fill="#0A66C2"><path d="${LINKEDIN}"/></g>`;
+      return `<rect x="1" y="1" width="50" height="50" rx="14" fill="#000" stroke="#303030"/><rect x="13" y="13" width="26" height="26" rx="2" fill="#fff"/><g transform="translate(13 13) scale(1.625)" fill="#0A66C2"><path d="${LINKEDIN}"/></g>`;
     case "github":
-      return `<g transform="translate(13 13) scale(1.0833333)" fill="${c.ink}"><path d="${GITHUB}"/></g>`;
+      return `${box}<g transform="translate(13 13) scale(1.0833333)" fill="${c.ink}"><path d="${GITHUB}"/></g>`;
     case "x":
-      return `<g transform="translate(13 13) scale(1.0833333)" fill="${c.ink}"><path d="${XMARK}"/></g>`;
+      return `${box}<g transform="translate(13 13) scale(1.0833333)" fill="${c.ink}"><path d="${XMARK}"/></g>`;
     case "email":
-      return GMAIL;
+      return `${box}${GMAIL}`;
   }
 }
 
@@ -83,7 +84,7 @@ function panel(theme, { id, title }, i) {
     : isLast
       ? `<path d="M0 1H204Q221 1 221 18V82Q221 99 204 99H0Z" fill="${c.surface}"/><path d="M0 1H204Q221 1 221 18V82Q221 99 204 99H0" fill="none" stroke="${c.hair}"/>`
       : `<rect y="1" width="222" height="98" fill="${c.surface}"/><path d="M0 1H222M0 99H222" stroke="${c.hair}"/>`;
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="222" height="100" viewBox="0 0 222 100"><title>${esc(title)}</title>${shape}<svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52" x="85" y="24"><title>${esc(title)}</title><rect x="1" y="1" width="50" height="50" rx="14" fill="${c.surface}" stroke="${c.hair}"/>${icon(id, theme)}</svg></svg>\n`;
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="222" height="100" viewBox="0 0 222 100"><title>${esc(title)}</title>${shape}<svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52" x="85" y="24"><title>${esc(title)}</title>${icon(id, theme)}</svg></svg>\n`;
 }
 
 // --- project bento ---------------------------------------------------------
